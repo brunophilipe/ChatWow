@@ -58,7 +58,7 @@ class ChatViewController: ChatWowViewController
 
 	@IBAction func addMessages(_ sender: Any)
 	{
-		var newMessages: [Any] = [
+		let newMessages: [Any] = [
 			"A new message",
 			"Another new message",
 			"A message",
