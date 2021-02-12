@@ -202,7 +202,7 @@ open class ChatWowViewController: UIViewController
 		tableView.register(UINib(nibName: "ChatInfoLineWithTimeCell", bundle: bundle), forCellReuseIdentifier: "chat_default_info_with_time")
 		tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: inputController.view.bounds.height + 20.0, right: 0)
 		tableView.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: inputController.view.bounds.height, right: 0)
-		tableView.backgroundColor = .white
+		tableView.backgroundColor = .systemBackground
 		tableView.separatorStyle = .none
 		tableView.keyboardDismissMode = .interactive
 
@@ -770,7 +770,7 @@ extension ChatWowViewController: ChatTableViewDelegate, UITableViewDataSource
 			if textMessage is ChatAnnotationMessage
 			{
 				/// Annotation rows have a fixed height
-				return 23.5
+				return 24
 			}
 			else if textMessage.useBigEmoji
 			{

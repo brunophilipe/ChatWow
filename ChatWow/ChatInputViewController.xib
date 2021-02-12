@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -29,13 +28,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type here to chat" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="uAi-6k-qqu" customClass="ChatInputField" customModule="ChatWow" customModuleProvider="target">
-                                <rect key="frame" x="4" y="25" width="367" height="36"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="4" y="5" width="367" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" hint="Insert text here to send a message"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="yPg-rb-2mL"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send"/>
                                 <userDefinedRuntimeAttributes>
@@ -46,7 +44,7 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.77530282735824585" green="0.77951180934906006" blue="0.79731816053390503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="separatorColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -54,7 +52,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5m-zM-G8J">
-                                <rect key="frame" x="333" y="20" width="42" height="46"/>
+                                <rect key="frame" x="333" y="0.0" width="42" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="Qnv-lC-pMC"/>
                                     <constraint firstAttribute="height" constant="46" id="elc-1P-AOH"/>
@@ -72,9 +70,11 @@
                             <constraint firstAttribute="trailing" secondItem="r5m-zM-G8J" secondAttribute="trailing" id="xC7-c5-6M2"/>
                         </constraints>
                     </view>
-                    <blurEffect style="extraLight"/>
+                    <blurEffect style="regular"/>
                 </visualEffectView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="ywc-ug-atc" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="6Dj-9d-uLq"/>
                 <constraint firstItem="ywc-ug-atc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bfz-Gz-4f2"/>
@@ -83,11 +83,21 @@
                 <constraint firstItem="ywc-ug-atc" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="u6b-mm-Pku"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="34.5" y="54"/>
         </view>
     </objects>
+    <designables>
+        <designable name="uAi-6k-qqu">
+            <size key="intrinsicContentSize" width="158" height="19.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="send" width="26" height="26"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
