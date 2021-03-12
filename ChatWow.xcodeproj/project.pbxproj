@@ -560,11 +560,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ChatWowDemo/ChatWowDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6KYJ233SU6;
+				DEVELOPMENT_TEAM = R85D3K8ATT;
 				INFOPLIST_FILE = ChatWowDemo/Info.plist;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopon.ChatWowDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunophilipe.ChatWowDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -582,11 +582,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ChatWowDemo/ChatWowDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6KYJ233SU6;
+				DEVELOPMENT_TEAM = R85D3K8ATT;
 				INFOPLIST_FILE = ChatWowDemo/Info.plist;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopon.ChatWowDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunophilipe.ChatWowDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
